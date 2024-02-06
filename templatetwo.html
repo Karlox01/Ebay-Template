@@ -37,6 +37,12 @@
                 font-family: Dancing Script;
             }
 
+            .info {
+                font-family: Bitter;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
             em {
                 font-weight: bold;
                 font-family: Young Serif;
@@ -44,8 +50,10 @@
             }
 
             .largeh2 {
-                font-size: 30px;
+                font-size: 25px;
                 padding: 20px;
+                text-transform: uppercase;
+                color: darkblue;
             }
 
             .desc-details {
@@ -256,8 +264,37 @@
             }
 
             #title {
-                color: #fff;
-                font-size: 40px;
+                font-size: 50px;
+                padding: 5px;
+                position: relative;
+                font-family: Dancing Script;
+                background: linear-gradient(90deg, #ffd700, #800080);
+                /* Gold to Purple gradient background */
+                -webkit-background-clip: text;
+                color: transparent;
+                text-align: center;
+                animation: shimmer 2s linear infinite;
+            }
+
+            #title::before {
+                content: '✨';
+                /* Unicode sparkle character */
+                font-size: 80px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                animation: shimmer 2s linear infinite;
+            }
+
+            @keyframes shimmer {
+                0% {
+                    background-position: 200% center;
+                }
+
+                100% {
+                    background-position: -200% center;
+                }
             }
 
             ::-moz-selection {
@@ -320,12 +357,50 @@
                 clear: both
             }
 
+            @media only screen and (max-width: 767px) {
+                #header-container {
+                    -webkit-box-shadow: none;
+                    -moz-box-shadow: none;
+                    box-shadow: none;
+                }
+
+                nav {
+                    float: none;
+                    width: 100%;
+                }
+
+                nav a {
+                    float: none;
+                    width: 100%;
+                    margin: 0;
+                    padding: 15px 0;
+                }
+
+                #main article {
+                    flex: 1 0 100%;
+                    margin-right: 0;
+                }
+
+                #title {
+                    font-size: 40px;
+                    /* Adjust the font size for smaller screens */
+                    padding: 5px;
+                    /* Adjust the padding for spacing */
+                }
+
+                #title::before {
+                    font-size: 40px;
+                    /* Adjust the font size for the sparkle icon */
+                }
+
+            }
+
             @media only screen and (min-width: 480px) {
 
                 #header-container {
-                    -webkit-box-shadow: 0 5px 10px #aaa;
-                    -moz-box-shadow: 0 5px 10px #aaa;
-                    box-shadow: 10px 50px 33px #aaa
+                    -webkit-box-shadow: 0 50px 125px rgb(55, 65, 81);
+                    -moz-box-shadow: 0 50px 125px rgb(55, 65, 81);
+                    box-shadow: 0 50px 125px rgb(55, 65, 81);
                 }
 
                 nav a {
@@ -357,25 +432,25 @@
             @media only screen and (min-width: 768px) {
 
                 #header-container {
-                    -webkit-box-shadow: 0 5px 10px #aaa;
-                    -moz-box-shadow: 0 5px 10px #aaa;
-                    box-shadow: 10px 50px 33px #aaa
+                    -webkit-box-shadow: 0 50px 125px rgb(55, 65, 81);
+                    -moz-box-shadow: 0 50px 125px rgb(55, 65, 81);
+                    box-shadow: 0 50px 125px rgb(55, 65, 81);
                 }
 
-                #title {
+                /* #title {
                     /* float: left */
-                }
-
-                nav {
-                    float: right;
-                    width: 38%
-                }
-
-                #main article {
-                    flex: 1 0 64%;
-                }
-
             }
+
+            */ nav {
+                float: right;
+                width: 38%
+            }
+
+            #main article {
+                flex: 1 0 64%;
+            }
+
+
 
             @media only screen and (min-width: 1140px) {
                 .wrapper {
@@ -416,9 +491,10 @@
             }
 
             .image-container {
+                margin-top: 20px;
                 width: 1500px;
-                background-color: pink;
-                height: 300px;
+                /* background-color: pink; */
+                height: 800px;
                 clear: both;
                 position: relative;
                 transition: left 2s;
@@ -430,6 +506,7 @@
                 margin: 0px;
                 padding: 0px;
                 position: relative;
+                object-fit: contain;
             }
 
             #slide-1:target~.image-container {
@@ -454,7 +531,7 @@
                 height: 25px;
                 width: 25px;
                 border-radius: 50px;
-                background-color: ;
+                /* background-color: ; */
                 color: black;
                 font-size: 40px;
                 margin: 0 5px;
@@ -492,28 +569,29 @@
         <div id="header-container">
             <header class="wrapper clearfix" role="banner">
                 <h1 id="title">Watches By Karl</h1>
+                <h4>We Buy Sell Trade Swiss Timepieces</h3>
             </header>
         </div>
         <div id="main-container" itemscope="" itemtype="http://schema.org/Product">
             <main id="main" class="wrapper clearfix" role="main">
                 <article>
                     <header>
-                        <h2 class="largeh2" itemprop="name">BREITLING AVENGER GMT II A32390</h2>
+                        <h2 class="largeh2" itemprop="name">Breitling Endurance Pro X82310 In a black dial version with
+                            Red "O-ring".</h2>
                     </header>
                     <section id="Description" itemprop="description">
                         <p class="desc-details">
-                            <i class="fas fa-check"></i> &nbsp;This gorgeous Breitling is supplied as a full set,
-                            including the original: Inner and Outer Box, Warranty Card, Booklets, Chronometer
-                            Certificate.
+                            <i class="fas fa-check"></i> &nbsp;This colorful BREITLING is supplied as a full set,
+                            including the original: Breitling box , Warranty Card, Booklets, Swing tag, Stickers,
+                            Original store invoice.
                         </p>
                         <p class="desc-details">
-                            <i class="fas fa-check"></i> &nbsp;First purchased in early 2018.
+                            <i class="fas fa-check"></i> &nbsp;First purchased during 2022 and unworn since bought.
                         </p>
                         <p class="desc-details">
-                            <i class="fas fa-check"></i> &nbsp;This watch is presented in a very good pre-owned
+                            <i class="fas fa-check"></i> &nbsp;This watch is presented in a pristine unworn pre-owned
                             condition,
-                            earning a rating of 8.5/10.
-                            * Watch runs within COSC.
+                            earning a rating of 10/10.
                         </p>
                         <p class="desc-details">
                             <i class="fas fa-check"></i> &nbsp;Prior to finalizing your purchase, we advise a
@@ -521,12 +599,13 @@
                             I make it a point to present a transparent depiction of any imperfections. In contrast to
                             other
                             sellers who might
-                            use terms like 'Mint' or 'Superb' to describe a condition that may not align with reality.
+                            use terms like 'Mint' or 'Superb' to describe a condition that may not align with the true
+                            state of the watch.
                             I am generally inclined to provide a lower rating rather than overstate the condition of the
-                            watch.
+                            timepiece.
                         </p>
                         <p class="desc-details">
-                            <i class="fas fa-check"></i> &nbsp;Kindly note that this is a listing for a pre-owned
+                            <i class="fas fa-check"></i> &nbsp;Kindly note that this is a listing for a pre-owned unworn
                             watch
                         </p>
                     </section>
@@ -535,14 +614,15 @@
                         <label for="InfoSectionToggle">Features and further details</label>
                         <div class="content">
                             <div>
-                                <p dir="ltr"><em>Diameter:</em>&nbsp; 43mm.</p>
-                                <p dir="ltr"><em>Case Material:</em>&nbsp; Stainless steel</p>
-                                <p dir="ltr"><em>Dial Color:</em>&nbsp; Black</p>
-                                <p dir="ltr"><em>Indexes:</em>&nbsp; batons</p>
-                                <p dir="ltr"><em>Lume:</em>&nbsp; Yes, on hands and markers.</p>
-                                <p dir="ltr"><em>Water Resistance:</em>&nbsp; 300 meters.</p>
-                                <p dir="ltr"><em>Box:</em>&nbsp; Yes</p>
-                                <p dir="ltr"><em>Papers:</em>&nbsp; Yes</p>
+                                <p dir="ltr"><em>Diameter:</em>&nbsp;<span class="info">44mm.</span></p>
+                                <p dir="ltr"><em>Case Material:</em>&nbsp; <span class="info">CARBON.</span></p>
+                                <p dir="ltr"><em>Dial Color:</em>&nbsp; <span class="info">BLACK.</span></p>
+                                <p dir="ltr"><em>Indexes:</em>&nbsp; <span class="info">ARABIC NUMERALS.</span></p>
+                                <p dir="ltr"><em>Lume:</em>&nbsp; <span class="info">ON HANDS AND MARKERS</span></p>
+                                <p dir="ltr"><em>Water Resistance:</em>&nbsp; <span class="info">100 METERS.</span></p>
+                                <p dir="ltr"><em>Box:</em>&nbsp; <span class="info">YES.</span></p>
+                                <p dir="ltr"><em>Papers:</em>&nbsp; <span class="info">YES.</span></p>
+                                <p dir="ltr"><em>Movement:</em>&nbsp; <span class="info">QUARTZ.</span></p>
                             </div>
                         </div>
                     </section>
@@ -609,24 +689,24 @@
                     <span id="slide-3"></span>
                     <div class="thumbnail-gallery">
                         <div class="thumbnail"><a href="#slide-1"><img
-                                    src="https://i.ebayimg.com/images/g/o-kAAOSw7xtliHa3/s-l1600.jpg"
+                                    src="https://i.ebayimg.com/images/g/swsAAOSwVT5luUhD/s-l1600.png"
                                     alt="Thumbnail 1"></a>
                         </div>
                         <div class="thumbnail"><a href="#slide-2"><img
-                                    src="https://i.ebayimg.com/images/g/MC0AAOSwhChliHa2/s-l1600.jpg"
+                                    src="https://i.ebayimg.com/images/g/tfsAAOSwkaRlfzfK/s-l1600.png"
                                     alt="Thumbnail 2"></a>
                         </div>
                         <div class="thumbnail"><a href="#slide-3"><img
-                                    src="https://i.ebayimg.com/images/g/9ScAAOSwPlhliHa1/s-l1600.jpg"
+                                    src="https://i.ebayimg.com/images/g/lB4AAOSw5NlluUhP/s-l1600.png"
                                     alt="Thumbnail 3"></a>
                         </div>
                     </div>
                     <div class="image-container">
-                        <img src="https://i.ebayimg.com/images/g/o-kAAOSw7xtliHa3/s-l1600.jpg" class="slide" width="500"
+                        <img src="https://i.ebayimg.com/images/g/swsAAOSwVT5luUhD/s-l1600.png" class="slide" width="500"
                             height="700" />
-                        <img src="https://i.ebayimg.com/images/g/MC0AAOSwhChliHa2/s-l1600.jpg" class="slide" width="500"
+                        <img src="https://i.ebayimg.com/images/g/tfsAAOSwkaRlfzfK/s-l1600.png" class="slide" width="500"
                             height="700" />
-                        <img src="https://i.ebayimg.com/images/g/9ScAAOSwPlhliHa1/s-l1600.jpg" class="slide" width="500"
+                        <img src="https://i.ebayimg.com/images/g/lB4AAOSw5NlluUhP/s-l1600.png" class="slide" width="500"
                             height="700" />
                     </div>
                 </div>
