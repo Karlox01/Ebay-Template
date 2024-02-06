@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<div id="template-karlo">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Watches By Karl</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@100&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Young+Serif&amp;display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&amp;display=swap" rel="stylesheet">
+        <style>
+            /* Your existing styles here */
+            article,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            nav,
+            section {
+                display: block
+            }
+
+            #header-container {
+                border-bottom: 20px;
+                color: white;
+                background-color: rgb(55, 65, 81);
+                font-family: Dancing Script;
+                text-align: center;
+                padding: 20px;
+            }
+
+            h2 {
+                font-family: Dancing Script;
+            }
+
+            em {
+                font-weight: bold;
+                font-family: Young Serif;
+                font-size: 20px;
+            }
+
+            .largeh2 {
+                font-size: 30px;
+                padding: 20px;
+            }
+
+            .desc-details {
+                font-family: Young Serif;
+            }
+
+            html {
+                font-size: 100%;
+                overflow-y: scroll;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%
+            }
+
+            body {
+                margin: 0;
+                line-height: 1.231
+            }
+
+            body,
+            button,
+            input,
+            select,
+            textarea {
+                font-family: sans-serif;
+                color: #222
+            }
+
+            a {
+                color: #136C91;
+                text-decoration: none
+            }
+
+            a:hover,
+            a:visited {
+                color: #136C91
+            }
+
+            a:focus {
+                outline: thin dotted
+            }
+
+            a:active,
+            a:hover {
+                outline: 0
+            }
+
+            abbr {
+                border-bottom: 1px dotted
+            }
+
+            strong {
+                font-weight: 700
+            }
+
+            blockquote {
+                margin: 1em 40px;
+                font-style: italic
+            }
+
+            hr {
+                display: block;
+                height: 1px;
+                border: 0;
+                border-top: 1px solid rgb(55, 65, 81);
+                margin: 1em 0;
+                padding: 0
+            }
+
+            code,
+            kbd,
+            pre,
+            samp {
+                font-family: monospace, monospace;
+                _font-family: 'courier new', monospace;
+                font-size: 1em
+            }
+
+            pre {
+                white-space: pre;
+                word-wrap: break-word
+            }
+
+            q {
+                quotes: none
+            }
+
+            q:after,
+            q:before {
+                content: "";
+            }
+
+            small {
+                font-size: 85%
+            }
+
+            sub,
+            sup {
+                font-size: 75%;
+                line-height: 0;
+                position: relative;
+                vertical-align: baseline
+            }
+
+            sup {
+                top: -.5em
+            }
+
+            sub {
+                bottom: -.25em
+            }
+
+            ol,
+            ul {
+                margin: 1em 0;
+                padding: 0 0 0 40px
+            }
+
+            nav ol,
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0
+            }
+
+            img {
+                padding: 10px 0;
+                border: 0;
+                -ms-interpolation-mode: bicubic;
+                vertical-align: middle;
+                max-width: 100%
+            }
+
+            figure {
+                margin: 0
+            }
+
+            figcaption {
+                text-align: center
+            }
+
+            table {
+                border-collapse: collapse;
+                border-spacing: 0
+            }
+
+            td {
+                vertical-align: top
+            }
+
+            small {
+                color: #136C91;
+                text-decoration: none
+            }
+
+            body {
+                font: 16px/24px Helvetica, Helvetica Neue, Arial, sans-serif
+            }
+
+            .wrapper {
+                width: 90%;
+                margin: 0 5%;
+                text-align: center;
+            }
+
+            .accordion-section input {
+                display: none;
+            }
+
+            .accordion-section label {
+                display: block;
+                padding: 15px 0;
+                background-color: rgb(55, 65, 81);
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                font-size: 20px;
+                font-weight: 100;
+                cursor: pointer;
+                font-family: Dancing Script;
+            }
+
+            .accordion-section label:hover {
+                background-color: #336699;
+            }
+
+            .accordion-section .content {
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease-in-out;
+            }
+
+            .accordion-section input:checked+label+.content {
+                max-height: 100%;
+                transition: max-height 0.3s ease-in-out;
+            }
+
+            #header-container {
+                border-bottom: 20px solid rgb(55, 65, 81);
+            }
+
+            #footer-container {
+                border-top: 20px solid rgb(55, 65, 81);
+            }
+
+            #footer-container,
+            #header-container {
+                background-color: rgb(55, 65, 81);
+            }
+
+            #title {
+                color: #fff;
+                font-size: 40px;
+            }
+
+            ::-moz-selection {
+                background-color: rgb(55, 65, 81);
+                color: #fff;
+                text-shadow: none
+            }
+
+            ::selection {
+                background-color: rgb(55, 65, 81);
+                color: #fff;
+                text-shadow: none
+            }
+
+            nav a {
+                display: block;
+                margin-bottom: 10px;
+                padding: 15px 0;
+                background-color: rgb(55, 65, 81);
+                color: #fff;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 700;
+                cursor: pointer;
+            }
+
+            nav a:hover,
+            nav a:visited {
+                color: #fff
+            }
+
+            nav a:hover {
+                text-decoration: underline
+            }
+
+            #main {
+                padding: 30px 0;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            #main article {
+                flex: 1 0 100%;
+                margin-bottom: 20px;
+            }
+
+
+            #footer-container footer {
+                color: #fff;
+                padding: 20px 0
+            }
+
+            .clearfix:after,
+            .clearfix:before {
+                content: "";
+                display: table
+            }
+
+            .clearfix:after {
+                clear: both
+            }
+
+            @media only screen and (min-width: 480px) {
+
+                #header-container {
+                    -webkit-box-shadow: 0 5px 10px #aaa;
+                    -moz-box-shadow: 0 5px 10px #aaa;
+                    box-shadow: 10px 50px 33px #aaa
+                }
+
+                nav a {
+                    float: left;
+                    width: 27%;
+                    margin: 0 1.7%;
+                    padding: 25px 2%;
+                }
+
+                nav li:first-child a {
+                    margin-left: 0
+                }
+
+                nav li:last-child a {
+                    margin-right: 0
+                }
+
+                nav ul li {
+                    display: inline
+                }
+
+                #main article {
+                    flex: 1 0 48%;
+                    margin-right: 4%;
+                }
+
+            }
+
+            @media only screen and (min-width: 768px) {
+
+                #header-container {
+                    -webkit-box-shadow: 0 5px 10px #aaa;
+                    -moz-box-shadow: 0 5px 10px #aaa;
+                    box-shadow: 10px 50px 33px #aaa
+                }
+
+                #title {
+                    /* float: left */
+                }
+
+                nav {
+                    float: right;
+                    width: 38%
+                }
+
+                #main article {
+                    flex: 1 0 64%;
+                }
+
+            }
+
+            @media only screen and (min-width: 1140px) {
+                .wrapper {
+                    width: 70%;
+                    margin: 0 15%
+                }
+
+                #main article {
+                    flex: 1 0 64%;
+                    margin-right: 4%;
+                }
+
+            }
+
+            @media only screen and (min-width: 1460px) {
+                .wrapper {
+                    width: 60%;
+                    margin: 0 20%
+                }
+
+                #main article {
+                    flex: 1 0 64%;
+                    margin-right: 4%;
+                }
+
+            }
+
+            /* Slider */
+
+            .slider {
+                width: 500px;
+                height: 800px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 0px;
+                text-align: center;
+                overflow: hidden;
+            }
+
+            .image-container {
+                width: 1500px;
+                background-color: pink;
+                height: 300px;
+                clear: both;
+                position: relative;
+                transition: left 2s;
+                /* Add margin to create space for buttons */
+            }
+
+            .slide {
+                float: left;
+                margin: 0px;
+                padding: 0px;
+                position: relative;
+            }
+
+            #slide-1:target~.image-container {
+                left: 0px;
+            }
+
+            #slide-2:target~.image-container {
+                left: -500px;
+            }
+
+            #slide-3:target~.image-container {
+                left: -1000px;
+            }
+
+            .buttons {
+                position: relative;
+                bottom: -30px;
+            }
+
+            .buttons a {
+                display: inline-block;
+                height: 25px;
+                width: 25px;
+                border-radius: 50px;
+                background-color: ;
+                color: black;
+                font-size: 40px;
+                margin: 0 5px;
+                /* Add margin between buttons */
+            }
+
+            .thumbnail-gallery {
+                display: flex;
+                justify-content: center;
+                margin-top: 10px;
+            }
+
+            .thumbnail {
+                width: 80px;
+                height: 80px;
+                margin: 0 5px;
+                cursor: pointer;
+                border: 2px solid black;
+                padding-bottom: 20px;
+            }
+
+            .thumbnail img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .thumbnail:hover {
+                border: 2px solid #336699;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="header-container">
+            <header class="wrapper clearfix" role="banner">
+                <h1 id="title">Watches By Karl</h1>
+            </header>
+        </div>
+        <div id="main-container" itemscope="" itemtype="http://schema.org/Product">
+            <main id="main" class="wrapper clearfix" role="main">
+                <article>
+                    <header>
+                        <h2 class="largeh2" itemprop="name">BREITLING AVENGER GMT II A32390</h2>
+                    </header>
+                    <section id="Description" itemprop="description">
+                        <p class="desc-details">
+                            <i class="fas fa-check"></i> &nbsp;This gorgeous Breitling is supplied as a full set,
+                            including the original: Inner and Outer Box, Warranty Card, Booklets, Chronometer
+                            Certificate.
+                        </p>
+                        <p class="desc-details">
+                            <i class="fas fa-check"></i> &nbsp;First purchased in early 2018.
+                        </p>
+                        <p class="desc-details">
+                            <i class="fas fa-check"></i> &nbsp;This watch is presented in a very good pre-owned
+                            condition,
+                            earning a rating of 8.5/10.
+                            * Watch runs within COSC.
+                        </p>
+                        <p class="desc-details">
+                            <i class="fas fa-check"></i> &nbsp;Prior to finalizing your purchase, we advise a
+                            thorough review of the accompanying photographs.
+                            I make it a point to present a transparent depiction of any imperfections. In contrast to
+                            other
+                            sellers who might
+                            use terms like 'Mint' or 'Superb' to describe a condition that may not align with reality.
+                            I am generally inclined to provide a lower rating rather than overstate the condition of the
+                            watch.
+                        </p>
+                        <p class="desc-details">
+                            <i class="fas fa-check"></i> &nbsp;Kindly note that this is a listing for a pre-owned
+                            watch
+                        </p>
+                    </section>
+                    <section class="accordion-section">
+                        <input type="checkbox" id="InfoSectionToggle">
+                        <label for="InfoSectionToggle">Features and further details</label>
+                        <div class="content">
+                            <div>
+                                <p dir="ltr"><em>Diameter:</em>&nbsp; 43mm.</p>
+                                <p dir="ltr"><em>Case Material:</em>&nbsp; Stainless steel</p>
+                                <p dir="ltr"><em>Dial Color:</em>&nbsp; Black</p>
+                                <p dir="ltr"><em>Indexes:</em>&nbsp; batons</p>
+                                <p dir="ltr"><em>Lume:</em>&nbsp; Yes, on hands and markers.</p>
+                                <p dir="ltr"><em>Water Resistance:</em>&nbsp; 300 meters.</p>
+                                <p dir="ltr"><em>Box:</em>&nbsp; Yes</p>
+                                <p dir="ltr"><em>Papers:</em>&nbsp; Yes</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="accordion-section">
+                        <input type="checkbox" id="contactSectionToggle">
+                        <label for="contactSectionToggle">Contact</label>
+                        <div class="content">
+                            <p class="desc-details">
+                                I can be contacted at any time through eBay messages if you have any questions,
+                                comments, or product requests. I aim to respond to you within 24 hours and do my best to
+                                assist.
+                                I encourage customers to contact me with any questions or concerns! I would like to
+                                be sure that you are completely satisfied with your purchase.&nbsp;
+                                And if you are please leave a positive Feedback!
+                            </p>
+                        </div>
+                    </section>
+                    <section class="accordion-section">
+                        <input type="checkbox" id="termsSectionToggle">
+                        <label for="termsSectionToggle">Delivery info and T&Cs</label>
+                        <div class="content">
+                            <h2>Shipping</h2>
+                            <p class="desc-details">
+                                Shipping exclusively to the United Kingdom via Royal Mail Special Delivery, Fully
+                                insured up
+                                to 2500£, Additional Insurance covering higher value pieces.
+                                Please note that all of the purchases over 1500£ are now covered by Ebay Authentication
+                                guarantee and will have to be shipped to their London point.
+                                Once authenticated Ebay uses their own delivery couriers fully insuring the value of the
+                                product. ( From my experience this is mostly done with UPS.)
+                                <hr>
+                                <i class="fas fa-check"></i> &nbsp;
+                            <p class="desc-details">If you reside outside of UK but have over 100+ positive feedback
+                                please
+                                get in touch and we can discuss the shipping options.
+                            </p>
+                            </p>
+                            <p>
+                                <hr>
+                            <h2>Returns</h2>
+                            <p class="desc-details">
+                                Any returns will have to go through Ebay Authentication services, To ensure the product
+                                has
+                                not been tempered with and is in the condition it was sent in.
+                            </p>
+                            <hr>
+                            <h2>Misc</h2>
+                            <p class="desc-details">
+                                Finally , With more than a decade in selling, trading and buying swiss watches
+                                throughout UK
+                                And Europe, There is an etiquette to this hobby,
+                                "Whats your best price" doesnt fit and is onboxious, If you are that guy i would
+                                strongly
+                                advise to move onto another listing.
+                                Most of my listings are published with "Make offer" option allowed. You are more than
+                                welcome to message me your offer through direct messages.
+                            </p>
+                        </div>
+                    </section>
+                </article>
+                <div class="slider">
+                    <span id="slide-1"></span>
+                    <span id="slide-2"></span>
+                    <span id="slide-3"></span>
+                    <div class="thumbnail-gallery">
+                        <div class="thumbnail"><a href="#slide-1"><img
+                                    src="https://i.ebayimg.com/images/g/o-kAAOSw7xtliHa3/s-l1600.jpg"
+                                    alt="Thumbnail 1"></a>
+                        </div>
+                        <div class="thumbnail"><a href="#slide-2"><img
+                                    src="https://i.ebayimg.com/images/g/MC0AAOSwhChliHa2/s-l1600.jpg"
+                                    alt="Thumbnail 2"></a>
+                        </div>
+                        <div class="thumbnail"><a href="#slide-3"><img
+                                    src="https://i.ebayimg.com/images/g/9ScAAOSwPlhliHa1/s-l1600.jpg"
+                                    alt="Thumbnail 3"></a>
+                        </div>
+                    </div>
+                    <div class="image-container">
+                        <img src="https://i.ebayimg.com/images/g/o-kAAOSw7xtliHa3/s-l1600.jpg" class="slide" width="500"
+                            height="700" />
+                        <img src="https://i.ebayimg.com/images/g/MC0AAOSwhChliHa2/s-l1600.jpg" class="slide" width="500"
+                            height="700" />
+                        <img src="https://i.ebayimg.com/images/g/9ScAAOSwPlhliHa1/s-l1600.jpg" class="slide" width="500"
+                            height="700" />
+                    </div>
+                </div>
+            </main>
+        </div>
+        <div id="footer-container">
+            <footer class="wrapper" role="contentinfo">
+                <em>© Watches By Karl.</em>
+            </footer>
+        </div>
+    </body>
+
+</div>
+
+</html>
